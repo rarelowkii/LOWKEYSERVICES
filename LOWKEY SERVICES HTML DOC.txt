@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LowKeyServices</title>
+  <meta name="description" content="LowKeyServices is a premium black-and-red gaming services website for unlock all services, camo services, and custom orders.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#060608;
+      --bg2:#0b0b10;
+      --card:#11111a;
+      --text:#f5f5f7;
+      --muted:#a1a1aa;
+      --red:#ff1e2d;
+      --red2:#b80015;
+      --line:rgba(255,255,255,.08);
+      --glow:rgba(255,30,45,.22);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(255,30,45,.13), transparent 28%),
+        linear-gradient(180deg,var(--bg),#040405 75%);
+      color:var(--text);
+      overflow-x:hidden;
+    }
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+    .particle-bg{
+      position:fixed;
+      inset:0;
+      overflow:hidden;
+      pointer-events:none;
+      z-index:0;
+    }
+    .particle{
+      position:absolute;
+      bottom:-20px;
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:rgba(255,30,45,.85);
+      box-shadow:0 0 18px rgba(255,30,45,.9), 0 0 40px rgba(255,30,45,.25);
+      animation: floatUp linear infinite;
+      opacity:.55;
+    }
+    .particle:nth-child(1){left:6%;  animation-duration:12s; animation-delay:0s;   transform:scale(.7)}
+    .particle:nth-child(2){left:14%; animation-duration:15s; animation-delay:2s;   transform:scale(1.1)}
+    .particle:nth-child(3){left:23%; animation-duration:18s; animation-delay:1s;   transform:scale(.8)}
+    .particle:nth-child(4){left:31%; animation-duration:13s; animation-delay:4s;   transform:scale(1.2)}
+    .particle:nth-child(5){left:40%; animation-duration:16s; animation-delay:3s;   transform:scale(.65)}
+    .particle:nth-child(6){left:48%; animation-duration:19s; animation-delay:6s;   transform:scale(1)}
+    .particle:nth-child(7){left:56%; animation-duration:14s; animation-delay:2.5s; transform:scale(.9)}
+    .particle:nth-child(8){left:64%; animation-duration:17s; animation-delay:5s;   transform:scale(1.15)}
+    .particle:nth-child(9){left:72%; animation-duration:13s; animation-delay:1.5s; transform:scale(.75)}
+    .particle:nth-child(10){left:80%; animation-duration:20s; animation-delay:4.5s; transform:scale(1.05)}
+    .particle:nth-child(11){left:88%; animation-duration:15s; animation-delay:0.8s; transform:scale(.85)}
+    .particle:nth-child(12){left:95%; animation-duration:18s; animation-delay:3.8s; transform:scale(1.2)}
+
+    @keyframes floatUp{
+      0%{transform:translateY(0) translateX(0) scale(var(--s,1)); opacity:0}
+      10%{opacity:.7}
+      50%{transform:translateY(-55vh) translateX(20px) scale(var(--s,1))}
+      100%{transform:translateY(-110vh) translateX(-18px) 
